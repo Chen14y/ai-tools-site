@@ -2,10 +2,36 @@ export const articles = [
   {
     slug: "best-ai-writing-tools-for-chinese-bloggers",
     title: "中文博客作者怎么选择 AI 写作工具",
+    titleEn: "How Chinese Bloggers Should Choose AI Writing Tools",
     description: "从选题、提纲、初稿、润色和事实检查五个环节，判断 AI 写作工具是否适合长期内容站。",
+    descriptionEn: "A practical framework for judging AI writing tools across topic research, outlines, drafts, editing, and fact checks.",
     category: "writing",
     date: "2026-05-11",
     readingTime: "6 分钟",
+    readingTimeEn: "6 min read",
+    sectionsEn: [
+      {
+        heading: "Why speed is not enough",
+        paragraphs: [
+          "AI writing tools can make content production feel easy, but publishing faster does not automatically create search traffic. Search users still need pages that answer specific questions with useful detail.",
+          "For long-term content sites, the better tool is the one that helps you shape topics, structure arguments, verify claims, and edit clearly. It should work like an editorial assistant, not an unattended publishing machine."
+        ]
+      },
+      {
+        heading: "Five evaluation criteria",
+        paragraphs: [
+          "Look for natural keyword-aware titles, clean H2 and H3 structures, strong Chinese expression, adjustable depth for different readers, and a smooth editing workflow.",
+          "The safest workflow is to let AI create the draft structure, then add real screenshots, pricing notes, personal judgment, and comparisons. Those human details are what make the page worth indexing."
+        ]
+      },
+      {
+        heading: "A practical workflow",
+        paragraphs: [
+          "Start with long-tail keyword research, generate several angles, choose the most specific one, then build an outline and remove repeated sections before writing the body.",
+          "Before publishing, check facts, add official links, include FAQ, and place ads only between natural content blocks. The goal is useful content first, monetization second."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "为什么写作工具不能只看生成速度",
@@ -33,10 +59,36 @@ export const articles = [
   {
     slug: "ai-background-remover-tools-for-product-photos",
     title: "AI 图片背景移除工具怎么选：电商商品图实用指南",
+    titleEn: "How to Choose AI Background Removers for Product Photos",
     description: "比较背景移除工具在速度、边缘处理、批量导出和商业使用上的关键差异。",
+    descriptionEn: "Compare AI background removal tools by speed, edge quality, batch exports, and commercial usage limits.",
     category: "image",
     date: "2026-05-11",
     readingTime: "5 分钟",
+    readingTimeEn: "5 min read",
+    sectionsEn: [
+      {
+        heading: "Why product photos need reliable background removal",
+        paragraphs: [
+          "Clean product images can improve click-through rates because the item is easier to inspect. AI background removers help turn messy photos into white-background product shots, ads, and social assets.",
+          "The real differences show up on hair, glass, transparent material, and complex edges. A useful tool should handle those details without making the product look cheap."
+        ]
+      },
+      {
+        heading: "What to compare",
+        paragraphs: [
+          "For occasional use, a web tool may be enough. For daily ecommerce work, compare batch upload, API access, naming rules, export size, and commercial usage terms.",
+          "The best tools also help with the next design step: background colors, shadows, canvas ratios, and export presets for different platforms."
+        ]
+      },
+      {
+        heading: "SEO angles worth targeting",
+        paragraphs: [
+          "Avoid broad terms and write around specific problems such as product photo background remover, bulk background remover, or how to remove background from transparent products.",
+          "Add real examples, operation steps, and output comparisons. Specific pages are more useful to search visitors and easier for a new site to rank."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "商品图为什么需要稳定的背景处理",
@@ -64,10 +116,36 @@ export const articles = [
   {
     slug: "ai-video-subtitle-tools-for-short-videos",
     title: "短视频自动字幕工具推荐：AI 字幕生成适合哪些场景",
+    titleEn: "Best AI Subtitle Generators for Short Videos",
     description: "分析 AI 字幕工具在口播短视频、课程剪辑和多语言分发中的使用价值。",
+    descriptionEn: "A practical look at AI subtitle tools for talking-head videos, course clips, and multilingual distribution.",
     category: "video",
     date: "2026-05-11",
     readingTime: "5 分钟",
+    readingTimeEn: "5 min read",
+    sectionsEn: [
+      {
+        heading: "Why subtitle keywords work for long-tail SEO",
+        paragraphs: [
+          "Creators often search for very specific subtitle and translation workflows. AI subtitle tools turn speech into captions and make videos easier to watch without sound.",
+          "These searches usually have clear intent, such as automatic YouTube subtitles, translate Chinese video to English captions, or add captions to short videos."
+        ]
+      },
+      {
+        heading: "Core features to compare",
+        paragraphs: [
+          "Accuracy, punctuation, line breaks, caption styles, export formats, and translation quality matter more than a generic feature list.",
+          "Team users may also care about templates, brand fonts, shared workspaces, and batch processing. Those details are useful in comparison articles."
+        ]
+      },
+      {
+        heading: "How to structure the article",
+        paragraphs: [
+          "Use a structure like problem, tool comparison, workflow, alternatives, and FAQ. Mid-article ad slots work well when the reader is already comparing options.",
+          "To avoid thin AI content, add screenshots, export format notes, and free-plan limits. These details make the article visibly more helpful."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "自动字幕为什么适合做长尾流量",
@@ -95,10 +173,36 @@ export const articles = [
   {
     slug: "ai-ppt-tools-for-small-teams",
     title: "小团队做提案，AI PPT 工具到底能省多少时间",
+    titleEn: "Best AI PPT Tools for Small Teams",
     description: "从提纲生成、页面排版、素材整理和复盘迭代角度，拆解 AI PPT 工具的真实价值。",
+    descriptionEn: "How AI presentation tools help small teams draft outlines, layouts, assets, and proposal iterations faster.",
     category: "office",
     date: "2026-05-11",
     readingTime: "6 分钟",
+    readingTimeEn: "6 min read",
+    sectionsEn: [
+      {
+        heading: "What AI PPT tools are good at",
+        paragraphs: [
+          "For small teams, the slowest part of a proposal is often turning rough ideas into a clear deck. AI PPT tools can generate the first structure and help the team start reviewing sooner.",
+          "They are best used for first drafts, not final delivery. Sales proposals, training outlines, project reviews, and internal reports are strong use cases."
+        ]
+      },
+      {
+        heading: "Do not ignore brand consistency",
+        paragraphs: [
+          "Many generated slides look polished at first glance but fail on brand consistency. Teams should check whether the tool supports colors, fonts, logos, and reusable themes.",
+          "For client-facing work, treat the AI output as a draft. Human editing is still needed for charts, examples, claims, and final conclusions."
+        ]
+      },
+      {
+        heading: "Where ads fit naturally",
+        paragraphs: [
+          "AI PPT readers often have commercial intent, so comparison sections and alternatives sections can monetize well.",
+          "Keep ads between natural sections instead of interrupting operation steps. A useful workflow earns more trust and better engagement."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "AI PPT 工具适合解决什么问题",
@@ -126,10 +230,36 @@ export const articles = [
   {
     slug: "ai-code-assistant-for-beginners",
     title: "新手程序员适合用哪些 AI 代码助手",
+    titleEn: "Best AI Coding Tools for Beginners",
     description: "解释 AI 编程工具如何帮助新手理解代码、修复错误和建立项目学习路径。",
+    descriptionEn: "How beginner developers can use AI coding tools to understand code, fix errors, and build a learning path.",
     category: "developer",
     date: "2026-05-11",
     readingTime: "7 分钟",
+    readingTimeEn: "7 min read",
+    sectionsEn: [
+      {
+        heading: "Coding assistants should not replace learning",
+        paragraphs: [
+          "AI coding tools can generate code quickly, but beginners need explanations more than final answers. The best tools explain context, error messages, and smaller next steps.",
+          "If a tool only gives finished code, it can create dependency. Prefer tools that can inspect project files, explain line by line, and generate tests."
+        ]
+      },
+      {
+        heading: "Three common beginner workflows",
+        paragraphs: [
+          "The first workflow is understanding existing code. The second is debugging errors with the relevant files and logs. The third is generating small practice projects.",
+          "These workflows create good long-tail keywords because the questions are specific, such as AI tool to explain JavaScript errors or Cursor tutorial for beginners."
+        ]
+      },
+      {
+        heading: "How to make the content stronger",
+        paragraphs: [
+          "Programming articles need concrete examples. Add code snippets, real error messages, and before-and-after fixes whenever possible.",
+          "A repeatable template can include problem background, recommended tools, steps, common errors, alternatives, and FAQ."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "代码助手不是替代学习",
@@ -157,10 +287,36 @@ export const articles = [
   {
     slug: "low-competition-ai-seo-keywords",
     title: "AI 工具站怎么找低竞争 SEO 关键词",
+    titleEn: "How to Find Low-Competition AI SEO Keywords",
     description: "用具体方法拆解如何找到有人搜索、竞争较低、适合新站启动的 AI 工具长尾词。",
+    descriptionEn: "A practical process for finding AI tool keywords with real search demand and lower competition for a new site.",
     category: "marketing",
     date: "2026-05-11",
     readingTime: "8 分钟",
+    readingTimeEn: "8 min read",
+    sectionsEn: [
+      {
+        heading: "New sites should avoid broad AI keywords",
+        paragraphs: [
+          "Keywords like AI tools, AI writing, and AI image generator have high volume, but they are extremely competitive. A new site is unlikely to rank quickly for those terms.",
+          "A better path is long-tail SEO. These keywords may have lower volume, but the intent is clearer and the competition is often more realistic."
+        ]
+      },
+      {
+        heading: "Four sources for keyword ideas",
+        paragraphs: [
+          "Use keyword tools, Google autocomplete, related searches, forums, Q&A sites, and competitor pages to find real user problems.",
+          "A simple formula is tool type plus use case plus audience or platform, such as AI tools for tax accountants or best AI subtitle generator for YouTube."
+        ]
+      },
+      {
+        heading: "How to avoid low-quality AI content",
+        paragraphs: [
+          "Do not publish a generic AI-generated article immediately after finding a keyword. First collect real tool details, then use AI to organize the draft, and finally add human judgment.",
+          "Search engines do not reject AI assistance by default, but they do reject repetitive pages that fail to solve the reader's problem."
+        ]
+      }
+    ],
     sections: [
       {
         heading: "新站不要一开始抢大词",
@@ -181,6 +337,63 @@ export const articles = [
         paragraphs: [
           "找到词以后，不要让 AI 直接生成一篇泛泛而谈的文章。更好的方式是先收集真实工具信息，再让 AI 按固定结构组织内容，最后人工补充判断和细节。",
           "搜索引擎不反对使用 AI 辅助内容，但会淘汰重复、无经验、无法解决问题的页面。真正有效的内容站，核心不是一天发多少篇，而是每一篇是否值得被搜索用户打开。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "best-ai-tools-for-log-analysis",
+    title: "安全团队怎么用 AI 做日志分析",
+    titleEn: "Best AI Tools for Log Analysis in Security Teams",
+    description: "围绕 SOC 告警、日志检索、异常解释和事件复盘，拆解 AI 安全工具的真实使用场景。",
+    descriptionEn: "A practical guide to using AI for SOC alerts, log search, anomaly explanation, and incident review.",
+    category: "cybersecurity",
+    date: "2026-05-12",
+    readingTime: "7 分钟",
+    readingTimeEn: "7 min read",
+    sectionsEn: [
+      {
+        heading: "The real problem is investigation speed",
+        paragraphs: [
+          "Security teams rarely need another generic chatbot. They need faster ways to understand alerts, search logs, explain anomalies, and summarize what happened during an incident.",
+          "This is why AI log analysis is a stronger long-tail topic than broad AI security tools. The user has a clear job to do and a clear reason to compare tools."
+        ]
+      },
+      {
+        heading: "What to evaluate",
+        paragraphs: [
+          "Compare data connectors, query generation, natural-language investigation, timeline summaries, permission controls, and whether the tool can explain its reasoning with linked evidence.",
+          "For security content, avoid vague claims. Real examples, sample log fields, before-and-after investigation steps, and screenshots make the article much more credible."
+        ]
+      },
+      {
+        heading: "Who should use these tools",
+        paragraphs: [
+          "AI log analysis tools are most useful for SOC analysts, incident responders, security engineers, and smaller teams that need to reduce alert fatigue.",
+          "They are not a replacement for security judgment. Treat them as investigation accelerators and always verify important findings against the original logs."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "真正的问题是调查速度",
+        paragraphs: [
+          "安全团队通常不缺一个泛用聊天机器人，真正缺的是更快理解告警、检索日志、解释异常和复盘事件的能力。",
+          "这也是 AI 日志分析比泛泛的 AI 安全工具更适合做长尾 SEO 的原因。搜索用户的问题更具体，商业意图也更明确。"
+        ]
+      },
+      {
+        heading: "选择工具时看哪些能力",
+        paragraphs: [
+          "重点看数据连接能力、查询生成、自然语言调查、时间线总结、权限控制，以及工具是否能把结论关联回原始证据。",
+          "安全类文章不能只写空泛描述。加入日志字段示例、调查前后对比、截图和真实工作流，会明显提升可信度。"
+        ]
+      },
+      {
+        heading: "适合哪些团队",
+        paragraphs: [
+          "AI 日志分析工具更适合 SOC 分析师、事件响应人员、安全工程师，以及需要降低告警疲劳的小型安全团队。",
+          "它不能替代安全判断，只适合作为调查加速器。关键结论仍然要回到原始日志和证据链中验证。"
         ]
       }
     ]

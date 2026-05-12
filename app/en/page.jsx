@@ -6,7 +6,13 @@ import { categories } from "@/data/categories";
 import { articles } from "@/data/articles";
 import { tools } from "@/data/tools";
 
-export default function HomePage() {
+export const metadata = {
+  title: "AI Tools Atlas - Long-Tail AI Tool Guides",
+  description:
+    "Find practical AI tools for office work, development, cybersecurity, and other high-intent use cases."
+};
+
+export default function EnglishHomePage() {
   const coreCategories = categories.filter((category) =>
     ["office", "developer", "cybersecurity"].includes(category.slug)
   );
@@ -18,32 +24,33 @@ export default function HomePage() {
       <section className="hero">
         <div className="container heroGrid">
           <div className="heroCopy">
-            <p className="eyebrow">AI 工具导航 / 长尾 SEO 内容站</p>
-            <h1>围绕真实场景问题寻找 AI 工具</h1>
+            <p className="eyebrow">AI Tools / Long-Tail SEO Guides</p>
+            <h1>AI tools for real work problems, not generic keywords</h1>
             <p className="heroText">
-              聚焦 AI 办公、AI 开发和 AI 安全，不抢泛关键词，用具体问题承接更有价值的搜索流量。
+              Explore AI tools for office workflows, developer productivity, and cybersecurity use cases with
+              practical guides built around specific search intent.
             </p>
             <div className="heroActions">
-              <Link className="button primary" href="/tools">
-                浏览工具
+              <Link className="button primary" href="/en/tools">
+                Browse tools
               </Link>
-              <Link className="button secondary" href="/articles">
-                查看文章
+              <Link className="button secondary" href="/en/articles">
+                Read guides
               </Link>
             </div>
           </div>
-          <div className="heroPanel" aria-label="网站核心数据">
+          <div className="heroPanel" aria-label="Site stats">
             <div>
               <span className="metric">{tools.length}</span>
-              <span className="metricLabel">精选工具</span>
+              <span className="metricLabel">AI tools</span>
             </div>
             <div>
               <span className="metric">{coreCategories.length}</span>
-              <span className="metricLabel">核心分类</span>
+              <span className="metricLabel">Core SEO categories</span>
             </div>
             <div>
               <span className="metric">{articles.length}</span>
-              <span className="metricLabel">示例文章</span>
+              <span className="metricLabel">Practical guides</span>
             </div>
           </div>
         </div>
@@ -54,36 +61,36 @@ export default function HomePage() {
           <div className="sectionHead">
             <div>
               <p className="eyebrow">Core Categories</p>
-              <h2>先做高价值长尾场景</h2>
+              <h2>Focus on high-intent AI use cases</h2>
             </div>
           </div>
           <div className="categoryGrid">
             {coreCategories.map((category) => (
-              <Link className="categoryTile" href={`/category/${category.slug}`} key={category.slug}>
-                <span>{category.name}</span>
-                <small>{category.description}</small>
+              <Link className="categoryTile" href={`/en/category/${category.slug}`} key={category.slug}>
+                <span>{category.nameEn}</span>
+                <small>{category.descriptionEn}</small>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <AdSlot id="home-middle" label="首页中部广告位" />
+      <AdSlot id="en-home-middle" label="English homepage middle ad" />
 
       <section className="section">
         <div className="container">
           <div className="sectionHead">
             <div>
               <p className="eyebrow">Tools</p>
-              <h2>精选 AI 工具</h2>
+              <h2>Featured AI tools</h2>
             </div>
-            <Link href="/tools" className="textLink">
-              全部工具
+            <Link href="/en/tools" className="textLink">
+              All tools
             </Link>
           </div>
           <div className="toolGrid">
             {featuredTools.map((tool) => (
-              <ToolCard tool={tool} key={tool.slug} />
+              <ToolCard tool={tool} key={tool.slug} locale="en" />
             ))}
           </div>
         </div>
@@ -94,15 +101,15 @@ export default function HomePage() {
           <div className="sectionHead">
             <div>
               <p className="eyebrow">SEO Articles</p>
-              <h2>最新 AI 工具教程</h2>
+              <h2>Long-tail AI guides</h2>
             </div>
-            <Link href="/articles" className="textLink">
-              全部文章
+            <Link href="/en/articles" className="textLink">
+              All articles
             </Link>
           </div>
           <div className="articleGrid">
             {latestArticles.map((article) => (
-              <ArticleCard article={article} key={article.slug} />
+              <ArticleCard article={article} key={article.slug} locale="en" />
             ))}
           </div>
         </div>

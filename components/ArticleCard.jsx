@@ -1,21 +1,24 @@
 import Link from "next/link";
 import { categories } from "@/data/categories";
 
-export function ArticleCard({ article }) {
+export function ArticleCard({ article, locale = "zh" }) {
   const category = categories.find((item) => item.slug === article.category);
+  const isEnglish = locale === "en";
+  const articlePath = isEnglish ? `/en/articles/${article.slug}` : `/articles/${article.slug}`;
+  const categoryName = isEnglish ? category?.nameEn : category?.name;
 
   return (
     <article className="articleCard">
       <div className="articleCardMeta">
-        <span>{category?.name ?? "AI 工具"}</span>
-        <span>{article.readingTime}</span>
+        <span>{categoryName ?? (isEnglish ? "AI Tools" : "AI 工具")}</span>
+        <span>{isEnglish ? article.readingTimeEn ?? article.readingTime : article.readingTime}</span>
       </div>
       <h3>
-        <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+        <Link href={articlePath}>{isEnglish ? article.titleEn ?? article.title : article.title}</Link>
       </h3>
-      <p>{article.description}</p>
-      <Link className="textLink" href={`/articles/${article.slug}`}>
-        阅读文章
+      <p>{isEnglish ? article.descriptionEn ?? article.description : article.description}</p>
+      <Link className="textLink" href={articlePath}>
+        {isEnglish ? "Read article" : "阅读文章"}
       </Link>
     </article>
   );
