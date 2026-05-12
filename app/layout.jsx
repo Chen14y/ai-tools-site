@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://ai-tools-site-lac.vercel.app"),
   title: {
     default: "AI Tools Atlas - AI 工具导航与教程",
     template: "%s | AI Tools Atlas"
