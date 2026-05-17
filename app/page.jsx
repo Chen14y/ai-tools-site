@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { ArticleCard } from "@/components/ArticleCard";
+import { CategoryCard } from "@/components/CategoryCard";
+import { HeroVisual } from "@/components/HeroVisual";
 import { ToolCard } from "@/components/ToolCard";
 import { categories } from "@/data/categories";
 import { articles } from "@/data/articles";
@@ -19,7 +21,13 @@ export default function HomePage() {
         <div className="container heroGrid">
           <div className="heroCopy">
             <p className="eyebrow">AI 工具导航 / 长尾 SEO 内容站</p>
-            <h1>围绕真实场景问题寻找 AI 工具</h1>
+            <h1>
+              为办公开发
+              <br />
+              与安全场景
+              <br />
+              寻找 AI 工具
+            </h1>
             <p className="heroText">
               聚焦 AI 办公、AI 开发和 AI 安全，不抢泛关键词，用具体问题承接更有价值的搜索流量。
             </p>
@@ -32,20 +40,16 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="heroPanel" aria-label="网站核心数据">
-            <div>
-              <span className="metric">{tools.length}</span>
-              <span className="metricLabel">精选工具</span>
-            </div>
-            <div>
-              <span className="metric">{coreCategories.length}</span>
-              <span className="metricLabel">核心分类</span>
-            </div>
-            <div>
-              <span className="metric">{articles.length}</span>
-              <span className="metricLabel">示例文章</span>
-            </div>
-          </div>
+          <HeroVisual
+            labels={{
+              aria: "AI 工具工作台视觉图",
+              alt: "AI 办公、开发和安全工具工作台",
+              panelOneTitle: "长尾场景",
+              panelOneValue: `${coreCategories.length} 条主线`,
+              panelTwoTitle: "内容资产",
+              panelTwoValue: `${articles.length} 篇文章`
+            }}
+          />
         </div>
       </section>
 
@@ -59,10 +63,7 @@ export default function HomePage() {
           </div>
           <div className="categoryGrid">
             {coreCategories.map((category) => (
-              <Link className="categoryTile" href={`/category/${category.slug}`} key={category.slug}>
-                <span>{category.name}</span>
-                <small>{category.description}</small>
-              </Link>
+              <CategoryCard category={category} href={`/category/${category.slug}`} key={category.slug} />
             ))}
           </div>
         </div>

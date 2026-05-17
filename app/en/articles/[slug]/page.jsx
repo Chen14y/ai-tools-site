@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
+import { FaqBlock } from "@/components/FaqBlock";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { articles } from "@/data/articles";
 import { categories } from "@/data/categories";
 
@@ -31,10 +33,31 @@ export default async function EnglishArticlePage({ params }) {
   }
 
   const category = categories.find((item) => item.slug === article.category);
+  const relatedArticles = articles
+    .filter((item) => item.slug !== article.slug && item.category === article.category)
+    .slice(0, 2);
   const sections = article.sectionsEn ?? article.sections;
+  const faqs = article.faqsEn ?? article.faqs;
+  const faqSchema = faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer
+          }
+        }))
+      }
+    : null;
 
   return (
     <article className="articlePage">
+      {faqSchema ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      ) : null}
       <div className="container narrow">
         <div className="articleHeader">
           <Link href={`/en/category/${article.category}`} className="pill">
@@ -64,7 +87,11 @@ export default async function EnglishArticlePage({ params }) {
           ))}
         </div>
 
+        <FaqBlock faqs={faqs} title="FAQ" />
+
         <AdSlot id={`en-article-${article.slug}-bottom`} label="English article bottom ad" compact />
+
+        <RelatedArticles articles={relatedArticles} locale="en" title="Keep reading" />
       </div>
     </article>
   );

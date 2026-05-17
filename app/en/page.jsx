@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { ArticleCard } from "@/components/ArticleCard";
+import { CategoryCard } from "@/components/CategoryCard";
+import { HeroVisual } from "@/components/HeroVisual";
 import { ToolCard } from "@/components/ToolCard";
 import { categories } from "@/data/categories";
 import { articles } from "@/data/articles";
@@ -39,20 +41,16 @@ export default function EnglishHomePage() {
               </Link>
             </div>
           </div>
-          <div className="heroPanel" aria-label="Site stats">
-            <div>
-              <span className="metric">{tools.length}</span>
-              <span className="metricLabel">AI tools</span>
-            </div>
-            <div>
-              <span className="metric">{coreCategories.length}</span>
-              <span className="metricLabel">Core SEO categories</span>
-            </div>
-            <div>
-              <span className="metric">{articles.length}</span>
-              <span className="metricLabel">Practical guides</span>
-            </div>
-          </div>
+          <HeroVisual
+            labels={{
+              aria: "AI tools workspace visual",
+              alt: "AI workspace for office, developer, and cybersecurity tools",
+              panelOneTitle: "Long-tail tracks",
+              panelOneValue: `${coreCategories.length} pillars`,
+              panelTwoTitle: "Content assets",
+              panelTwoValue: `${articles.length} guides`
+            }}
+          />
         </div>
       </section>
 
@@ -66,10 +64,12 @@ export default function EnglishHomePage() {
           </div>
           <div className="categoryGrid">
             {coreCategories.map((category) => (
-              <Link className="categoryTile" href={`/en/category/${category.slug}`} key={category.slug}>
-                <span>{category.nameEn}</span>
-                <small>{category.descriptionEn}</small>
-              </Link>
+              <CategoryCard
+                category={category}
+                href={`/en/category/${category.slug}`}
+                key={category.slug}
+                locale="en"
+              />
             ))}
           </div>
         </div>

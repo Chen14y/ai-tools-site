@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/data/categories";
 
@@ -9,6 +10,17 @@ export function ArticleCard({ article, locale = "zh" }) {
 
   return (
     <article className="articleCard">
+      {category?.image ? (
+        <div className="articleThumb">
+          <Image
+            src={category.image}
+            alt={isEnglish ? `${categoryName} guide visual` : `${categoryName}教程视觉图`}
+            fill
+            sizes="(max-width: 700px) 100vw, 50vw"
+            className="articleThumbImage"
+          />
+        </div>
+      ) : null}
       <div className="articleCardMeta">
         <span>{categoryName ?? (isEnglish ? "AI Tools" : "AI 工具")}</span>
         <span>{isEnglish ? article.readingTimeEn ?? article.readingTime : article.readingTime}</span>

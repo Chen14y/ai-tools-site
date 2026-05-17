@@ -88,6 +88,28 @@ export const tools = [
     tagsEn: ["PPT", "Proposal", "Presentation"]
   },
   {
+    slug: "otter-ai",
+    name: "Otter.ai",
+    initials: "OT",
+    category: "office",
+    description: "会议转写和摘要工具，适合远程团队整理行动项和会议记录。",
+    descriptionEn: "Meeting transcription and summary tool for remote teams, action items, and meeting records.",
+    url: "https://otter.ai",
+    tags: ["会议纪要", "转写", "远程团队"],
+    tagsEn: ["Meeting notes", "Transcription", "Remote teams"]
+  },
+  {
+    slug: "numerous-ai",
+    name: "Numerous.ai",
+    initials: "NU",
+    category: "office",
+    description: "面向表格的 AI 工具，适合生成公式、清洗数据和批量处理单元格内容。",
+    descriptionEn: "Spreadsheet AI tool for formulas, data cleanup, and bulk cell operations.",
+    url: "https://numerous.ai",
+    tags: ["Excel", "公式", "数据清洗"],
+    tagsEn: ["Excel", "Formulas", "Data cleanup"]
+  },
+  {
     slug: "cursor",
     name: "Cursor",
     initials: "CU",
@@ -110,6 +132,17 @@ export const tools = [
     tagsEn: ["Completion", "Tests", "Developer productivity"]
   },
   {
+    slug: "windsurf",
+    name: "Windsurf",
+    initials: "WS",
+    category: "developer",
+    description: "AI 代码编辑器，适合项目级代码理解、多文件修改和开发流程自动化。",
+    descriptionEn: "AI code editor for repository understanding, multi-file edits, and development workflow automation.",
+    url: "https://windsurf.com",
+    tags: ["编程", "多文件修改", "代码助手"],
+    tagsEn: ["Coding", "Multi-file edits", "Code assistant"]
+  },
+  {
     slug: "microsoft-security-copilot",
     name: "Microsoft Security Copilot",
     initials: "SC",
@@ -130,6 +163,28 @@ export const tools = [
     url: "https://cloud.google.com/security/products/security-operations",
     tags: ["日志分析", "威胁检测", "SOC"],
     tagsEn: ["Log analysis", "Threat detection", "SOC"]
+  },
+  {
+    slug: "plextrac",
+    name: "PlexTrac",
+    initials: "PT",
+    category: "cybersecurity",
+    description: "安全评估和渗透测试报告平台，适合团队管理发现、证据和修复跟踪。",
+    descriptionEn: "Security assessment and pentest reporting platform for findings, evidence, and remediation tracking.",
+    url: "https://plextrac.com",
+    tags: ["渗透测试", "报告", "修复跟踪"],
+    tagsEn: ["Pentesting", "Reporting", "Remediation"]
+  },
+  {
+    slug: "snyk",
+    name: "Snyk",
+    initials: "SY",
+    category: "cybersecurity",
+    description: "开发者友好的安全工具，适合依赖漏洞、容器和代码安全检查。",
+    descriptionEn: "Developer-friendly security platform for dependency vulnerabilities, containers, and code security checks.",
+    url: "https://snyk.io",
+    tags: ["漏洞扫描", "开发安全", "依赖"],
+    tagsEn: ["Vulnerability scanning", "DevSecOps", "Dependencies"]
   },
   {
     slug: "semrush",

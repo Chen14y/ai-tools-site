@@ -397,5 +397,481 @@ export const articles = [
         ]
       }
     ]
+  },
+  {
+    slug: "best-ai-tools-for-pentesting-reports",
+    title: "渗透测试报告怎么用 AI 工具提效",
+    titleEn: "Best AI Tools for Pentesting Reports in 2026",
+    description: "面向安全顾问和红队，把漏洞证据、风险说明、修复建议和客户报告写作流程拆开分析。",
+    descriptionEn: "A practical guide for security consultants who want to turn findings, evidence, risk notes, and remediation advice into better pentest reports.",
+    category: "cybersecurity",
+    date: "2026-05-17",
+    readingTime: "9 分钟",
+    readingTimeEn: "9 min read",
+    sectionsEn: [
+      {
+        heading: "Why pentest reporting is a strong AI use case",
+        paragraphs: [
+          "Pentest reporting is repetitive, detail-heavy, and expensive. A consultant may spend hours converting raw findings into client-ready language, even when the technical work is already complete.",
+          "AI tools can help draft vulnerability summaries, rewrite remediation steps for different audiences, normalize severity language, and turn command output into a cleaner evidence narrative."
+        ]
+      },
+      {
+        heading: "Where AI should and should not be used",
+        paragraphs: [
+          "AI is useful for structure, clarity, and first drafts. It should not invent proof, severity ratings, affected assets, or exploitability claims. The human tester must verify every factual statement against screenshots, logs, requests, and reproduced findings.",
+          "A safe workflow is to provide the tool with only sanitized evidence, ask it for a report section, and then manually compare the output with the original notes before sending anything to a client."
+        ]
+      },
+      {
+        heading: "Features to compare",
+        paragraphs: [
+          "Look for private workspaces, document export, reusable report templates, evidence attachment support, tone controls, and the ability to separate executive summaries from technical details.",
+          "For teams, the best tool is not always the most creative writer. It is the tool that helps maintain consistent wording across findings, reduces editing time, and keeps sensitive client data under control."
+        ]
+      },
+      {
+        heading: "Example workflow",
+        paragraphs: [
+          "Start with raw notes: affected URL, parameter, payload, proof screenshot, impact, and recommended fix. Ask the AI tool to draft only the finding description and remediation section.",
+          "Then add your own business impact, testing limitations, and retest status. Those human details make the report more credible and reduce the risk of generic AI text."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "为什么渗透测试报告适合用 AI",
+        paragraphs: [
+          "渗透测试报告重复、细节多、交付压力大。很多安全顾问真正耗时间的不是发现漏洞，而是把证据、影响和修复建议写成客户能理解的内容。",
+          "AI 可以帮助生成漏洞摘要、把修复建议改写成不同受众能读懂的语言、统一风险表达，并把命令输出整理成更清楚的证据说明。"
+        ]
+      },
+      {
+        heading: "AI 适合做什么，不适合做什么",
+        paragraphs: [
+          "AI 适合做结构、措辞和初稿，不适合编造证据、严重等级、受影响资产或可利用性结论。所有事实必须由测试人员根据截图、日志、请求包和复现结果确认。",
+          "更稳妥的流程是只提供脱敏证据，让 AI 写某一小节，然后人工逐条对照原始记录。这样既省时间，也不会把不确定内容写进客户报告。"
+        ]
+      },
+      {
+        heading: "选择工具时看哪些功能",
+        paragraphs: [
+          "重点看私有工作区、文档导出、报告模板、证据附件、语气控制，以及能否区分管理层摘要和技术细节。",
+          "团队使用时，最重要的不一定是写得多华丽，而是能保持报告风格统一、减少编辑时间，并控制客户敏感数据的流转。"
+        ]
+      },
+      {
+        heading: "一个可落地的流程",
+        paragraphs: [
+          "先整理原始信息：受影响 URL、参数、payload、证据截图、影响和修复建议。让 AI 只生成漏洞描述和修复建议，不要让它自动决定风险等级。",
+          "最后由人工补充业务影响、测试限制和复测状态。这些真实判断会让报告更像专业交付，而不是通用模板。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Can AI write a complete pentest report?",
+        answer: "It can draft sections, but a human tester should verify evidence, severity, scope, and remediation details before delivery."
+      },
+      {
+        question: "Is it safe to paste client data into AI tools?",
+        answer: "Only use approved tools and sanitized evidence. Sensitive customer data should stay inside controlled systems."
+      }
+    ],
+    faqs: [
+      {
+        question: "AI 能直接写完整渗透测试报告吗？",
+        answer: "可以辅助写小节和初稿，但证据、等级、范围和修复建议必须由测试人员人工确认。"
+      },
+      {
+        question: "客户数据可以直接贴进 AI 工具吗？",
+        answer: "不建议。应使用合规工具，并尽量只提供脱敏证据和必要上下文。"
+      }
+    ]
+  },
+  {
+    slug: "ai-tools-for-soc-analysts",
+    title: "SOC 分析师适合用哪些 AI 工具",
+    titleEn: "Best AI Tools for SOC Analysts in 2026",
+    description: "从告警分诊、日志查询、事件时间线和交接班总结角度，拆解 SOC 分析师的 AI 工具需求。",
+    descriptionEn: "How SOC analysts can use AI for alert triage, log queries, incident timelines, and shift handoff summaries.",
+    category: "cybersecurity",
+    date: "2026-05-17",
+    readingTime: "8 分钟",
+    readingTimeEn: "8 min read",
+    sectionsEn: [
+      {
+        heading: "The daily SOC problem",
+        paragraphs: [
+          "SOC analysts spend a large part of the day moving between alerts, SIEM searches, endpoint telemetry, ticket comments, and handoff notes. The work is high-pressure and full of context switching.",
+          "AI tools can reduce the friction around investigation steps: summarize an alert, suggest a query, explain a suspicious command, or create a clean incident timeline."
+        ]
+      },
+      {
+        heading: "High-value SOC workflows",
+        paragraphs: [
+          "The most useful workflows are alert triage, natural-language log search, entity enrichment, incident summarization, and shift handoff notes.",
+          "A strong AI tool should connect conclusions to evidence. If it cannot show which log event, asset, user, or detection rule supports a claim, the analyst still has too much manual verification work."
+        ]
+      },
+      {
+        heading: "What smaller teams should prioritize",
+        paragraphs: [
+          "Small security teams should prioritize tools that reduce repetitive triage and documentation. A tool that saves ten minutes per medium-priority alert can matter more than an advanced feature that is rarely used.",
+          "Start with non-destructive workflows such as summarization and query assistance before allowing AI to suggest containment actions."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "SOC 日常真正耗在哪里",
+        paragraphs: [
+          "SOC 分析师每天要在告警、SIEM 查询、终端数据、工单备注和交接班记录之间切换。压力大，信息碎片多，很多时间花在重复整理上下文上。",
+          "AI 工具可以降低调查流程的摩擦，例如总结告警、建议查询语句、解释可疑命令，或把事件整理成时间线。"
+        ]
+      },
+      {
+        heading: "最有价值的 SOC 工作流",
+        paragraphs: [
+          "优先关注告警分诊、自然语言日志查询、实体补充、事件总结和交接班记录。",
+          "好的 AI 安全工具必须能把结论关联到证据。如果不能说明是哪条日志、哪个资产、哪个用户或哪条规则支撑结论，分析师还是要花大量时间复核。"
+        ]
+      },
+      {
+        heading: "小团队应该优先看什么",
+        paragraphs: [
+          "小型安全团队应优先选择能减少重复分诊和文档工作的工具。一个能让每条中风险告警少花十分钟的工具，可能比复杂但少用的高级功能更有价值。",
+          "建议先从总结、查询辅助这类低风险工作流开始，再逐步评估是否允许 AI 建议隔离、封禁等处置动作。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Can AI replace SOC analysts?",
+        answer: "No. AI can reduce repetitive investigation and documentation work, but analysts still need to validate evidence and decide response actions."
+      },
+      {
+        question: "Which SOC task is best for AI first?",
+        answer: "Alert summarization and query assistance are good starting points because they improve speed without directly changing systems."
+      }
+    ],
+    faqs: [
+      {
+        question: "AI 会取代 SOC 分析师吗？",
+        answer: "不会。AI 可以减少重复调查和文档工作，但证据验证和响应决策仍然需要分析师负责。"
+      },
+      {
+        question: "SOC 最适合先用 AI 做什么？",
+        answer: "告警总结和查询辅助最适合先落地，因为能提速，又不会直接改变系统状态。"
+      }
+    ]
+  },
+  {
+    slug: "ai-excel-formula-generator-for-finance-teams",
+    title: "财务团队怎么用 AI 生成 Excel 公式",
+    titleEn: "AI Excel Formula Generator for Finance Teams",
+    description: "围绕预算、报销、对账和月度报表，说明 AI Excel 公式工具如何减少办公重复劳动。",
+    descriptionEn: "Use AI Excel formula generators for budgets, reimbursements, reconciliations, and monthly finance reports.",
+    category: "office",
+    date: "2026-05-17",
+    readingTime: "8 分钟",
+    readingTimeEn: "8 min read",
+    sectionsEn: [
+      {
+        heading: "Why finance teams search for Excel AI tools",
+        paragraphs: [
+          "Finance teams often know the business rule but do not want to spend time translating it into nested formulas. This is exactly where AI Excel formula generators can help.",
+          "A good prompt describes the columns, the rule, and the expected output. The tool can then generate formulas for lookup, classification, date logic, variance checks, and conditional flags."
+        ]
+      },
+      {
+        heading: "Best use cases",
+        paragraphs: [
+          "Strong use cases include reimbursement categorization, duplicate invoice checks, monthly budget variance, aging buckets, currency conversions, and data cleanup before reporting.",
+          "AI is especially useful when the formula is not difficult enough to require a data analyst, but still annoying enough to slow down daily work."
+        ]
+      },
+      {
+        heading: "How to verify formulas",
+        paragraphs: [
+          "Always test the formula on a small sample with known answers. Check blanks, zero values, text numbers, date formats, and edge cases before applying it to a full sheet.",
+          "For finance work, the final control should be a human review. The AI tool saves time, but it should not become the only source of truth."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "为什么财务团队会搜索 AI Excel 工具",
+        paragraphs: [
+          "财务团队通常知道业务规则，但不想花太多时间把规则翻译成复杂公式。AI Excel 公式生成器正好适合解决这个问题。",
+          "一个好提示词应该说明列名、判断规则和期望输出。工具就能生成查找、分类、日期逻辑、差异检查和条件标记等公式。"
+        ]
+      },
+      {
+        heading: "最适合的使用场景",
+        paragraphs: [
+          "常见场景包括报销分类、重复发票检查、月度预算差异、账龄分组、币种换算和报表前的数据清理。",
+          "当问题不复杂到需要数据分析师，但又足够烦人、会拖慢日常工作时，AI 公式工具最有价值。"
+        ]
+      },
+      {
+        heading: "公式怎么验证",
+        paragraphs: [
+          "先在小样本上测试，并准备已知正确答案。重点检查空值、零值、文本数字、日期格式和边界情况。",
+          "财务工作里，最后仍然要人工复核。AI 工具负责省时间，但不应该成为唯一真相来源。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Can AI generate Excel formulas accurately?",
+        answer: "It can generate useful formulas, but finance teams should test them on known examples and edge cases before using them in reports."
+      },
+      {
+        question: "What should I include in the prompt?",
+        answer: "Include column names, sample rows, the business rule, and the expected output."
+      }
+    ],
+    faqs: [
+      {
+        question: "AI 生成 Excel 公式准吗？",
+        answer: "可以生成可用公式，但财务团队必须用已知样本和边界情况测试后再用于报表。"
+      },
+      {
+        question: "提示词应该写什么？",
+        answer: "写清楚列名、示例行、业务规则和期望输出。"
+      }
+    ]
+  },
+  {
+    slug: "cursor-vs-windsurf-for-small-dev-teams",
+    title: "小开发团队怎么选 Cursor 和 Windsurf",
+    titleEn: "Cursor vs Windsurf for Small Development Teams",
+    description: "从项目理解、代码修改、团队协作和学习成本角度，比较两类 AI 编程工具的取舍。",
+    descriptionEn: "A practical comparison of Cursor and Windsurf for project understanding, code changes, team workflows, and learning curve.",
+    category: "developer",
+    date: "2026-05-17",
+    readingTime: "9 分钟",
+    readingTimeEn: "9 min read",
+    sectionsEn: [
+      {
+        heading: "What small teams actually need",
+        paragraphs: [
+          "Small development teams usually need faster feature delivery, quicker bug investigation, better onboarding, and less time spent writing routine code.",
+          "The best AI coding tool is the one that fits the existing repository and review workflow. A tool that looks impressive in demos may still fail if developers do not trust its edits."
+        ]
+      },
+      {
+        heading: "Comparison criteria",
+        paragraphs: [
+          "Compare repository indexing, multi-file edits, terminal awareness, code explanation, test generation, privacy controls, and how easy it is to review the generated diff.",
+          "For beginners, explanation quality matters. For senior developers, controllable edits and good context retrieval matter more."
+        ]
+      },
+      {
+        heading: "How to test before adopting",
+        paragraphs: [
+          "Pick three real tasks: fix a small bug, add a test, and refactor a simple component. Measure how much review time the AI output needs.",
+          "Do not judge the tool only by how much code it writes. Judge it by whether the final pull request is easier to review and safer to merge."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "小团队真正需要什么",
+        paragraphs: [
+          "小开发团队通常需要更快交付功能、更快定位 bug、更容易让新人理解项目，并减少重复代码工作。",
+          "最好的 AI 编程工具不是演示最炫的那个，而是能融入现有仓库和代码评审流程的那个。如果开发者不信任它的改动，生成再多代码也没用。"
+        ]
+      },
+      {
+        heading: "比较时看哪些指标",
+        paragraphs: [
+          "建议比较仓库索引、多文件修改、终端上下文、代码解释、测试生成、隐私控制，以及生成 diff 是否容易审查。",
+          "对新手来说，解释质量很重要。对资深开发者来说，可控修改和准确上下文检索更关键。"
+        ]
+      },
+      {
+        heading: "上线前怎么测试",
+        paragraphs: [
+          "选三个真实任务：修一个小 bug、补一个测试、重构一个简单组件。记录 AI 输出需要多少人工评审时间。",
+          "不要只看它写了多少代码，而要看最终 PR 是否更容易审查、更安全合并。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Should beginners use AI coding tools?",
+        answer: "Yes, if they use the tool to understand code and errors instead of copying answers blindly."
+      },
+      {
+        question: "How should a team evaluate AI coding tools?",
+        answer: "Run the same real tasks in each tool and compare review time, correctness, and test quality."
+      }
+    ],
+    faqs: [
+      {
+        question: "新手适合用 AI 编程工具吗？",
+        answer: "适合，但应该用来理解代码和错误，而不是盲目复制答案。"
+      },
+      {
+        question: "团队怎么评估 AI 编程工具？",
+        answer: "用同一组真实任务测试，比较评审时间、正确性和测试质量。"
+      }
+    ]
+  },
+  {
+    slug: "free-ai-meeting-notes-tools-for-remote-teams",
+    title: "远程团队适合用哪些免费 AI 会议纪要工具",
+    titleEn: "Free AI Meeting Notes Tools for Remote Teams",
+    description: "面向远程团队，比较 AI 会议纪要工具在转写、摘要、行动项和隐私上的关键差异。",
+    descriptionEn: "Compare free AI meeting notes tools by transcription, summaries, action items, integrations, and privacy.",
+    category: "office",
+    date: "2026-05-17",
+    readingTime: "7 分钟",
+    readingTimeEn: "7 min read",
+    sectionsEn: [
+      {
+        heading: "Why meeting notes are a strong long-tail topic",
+        paragraphs: [
+          "Remote teams have many small meetings, and the cost of losing decisions is high. AI meeting notes tools help capture summaries, action items, owners, and follow-ups.",
+          "This is a good long-tail topic because users often search with clear intent: free AI meeting notes, meeting summary tool for remote teams, or automatic action items from Zoom calls."
+        ]
+      },
+      {
+        heading: "What free plans usually limit",
+        paragraphs: [
+          "Free plans often limit transcription minutes, recording storage, integrations, export formats, or the number of meetings per month.",
+          "When writing or choosing tools, do not just say free. Explain the practical limit and who can still use the free plan comfortably."
+        ]
+      },
+      {
+        heading: "Privacy checklist",
+        paragraphs: [
+          "Check whether the tool joins meetings as a bot, stores recordings, supports deletion, and allows workspace-level permission controls.",
+          "For client calls or internal strategy meetings, privacy and consent matter more than a beautiful summary."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "为什么会议纪要是好长尾词",
+        paragraphs: [
+          "远程团队会议多，决策容易散落在聊天和录音里。AI 会议纪要工具可以自动整理摘要、行动项、负责人和后续跟进。",
+          "这类关键词意图很清楚，例如免费 AI 会议纪要、远程团队会议总结工具、Zoom 自动行动项等。"
+        ]
+      },
+      {
+        heading: "免费版通常限制什么",
+        paragraphs: [
+          "免费版常见限制包括转写分钟数、录音存储、集成数量、导出格式或每月会议次数。",
+          "写内容或选工具时，不能只写“免费”，还要说明实际限制，以及什么团队能舒服地用免费版。"
+        ]
+      },
+      {
+        heading: "隐私检查清单",
+        paragraphs: [
+          "需要确认工具是否以机器人身份进入会议、是否保存录音、是否支持删除、是否有工作区权限控制。",
+          "如果是客户会议或内部战略会议，隐私和同意比摘要是否漂亮更重要。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Are free AI meeting notes tools enough?",
+        answer: "They are enough for light use, but teams should check transcription minutes, storage, and export limits."
+      },
+      {
+        question: "Do meeting bots require consent?",
+        answer: "Teams should disclose recording or transcription and follow local laws and company policy."
+      }
+    ],
+    faqs: [
+      {
+        question: "免费 AI 会议纪要工具够用吗？",
+        answer: "轻度使用通常够用，但要看转写分钟数、存储和导出限制。"
+      },
+      {
+        question: "会议机器人需要征得同意吗？",
+        answer: "建议明确告知录音或转写，并遵守当地法律和公司政策。"
+      }
+    ]
+  },
+  {
+    slug: "chatgpt-alternative-for-coding-with-private-repos",
+    title: "私有代码仓库适合用哪些 ChatGPT 编程替代工具",
+    titleEn: "ChatGPT Alternatives for Coding with Private Repositories",
+    description: "围绕私有仓库、上下文检索、权限控制和代码审查，说明编程类 AI 工具怎么选。",
+    descriptionEn: "How to choose coding AI tools for private repositories, context retrieval, permissions, and code review workflows.",
+    category: "developer",
+    date: "2026-05-17",
+    readingTime: "8 分钟",
+    readingTimeEn: "8 min read",
+    sectionsEn: [
+      {
+        heading: "Why private repositories change the decision",
+        paragraphs: [
+          "When code is private, the question is not only which model is smartest. Teams must also consider permissions, data retention, repository indexing, and whether generated changes are easy to review.",
+          "A chat-only workflow can help with explanations, but repository-aware tools are often better for real code changes because they can inspect files and maintain context."
+        ]
+      },
+      {
+        heading: "What to compare",
+        paragraphs: [
+          "Compare access controls, repo indexing, local versus cloud processing, audit logs, context window, diff review, and whether the tool can respect project conventions.",
+          "Teams in regulated industries should also check vendor documentation, admin controls, and data handling terms before connecting private code."
+        ]
+      },
+      {
+        heading: "A safe adoption path",
+        paragraphs: [
+          "Start with read-only explanations and test generation. Then allow small edits in non-critical repositories. Only expand to sensitive services after the team has a review process.",
+          "The goal is not to remove code review. The goal is to make the first draft faster while keeping human ownership of the final change."
+        ]
+      }
+    ],
+    sections: [
+      {
+        heading: "私有仓库会改变选择标准",
+        paragraphs: [
+          "涉及私有代码时，问题不只是哪个模型更聪明。团队还要考虑权限、数据保留、仓库索引，以及生成改动是否容易审查。",
+          "纯聊天工具适合解释问题，但真正改代码时，能理解仓库上下文的工具通常更实用。"
+        ]
+      },
+      {
+        heading: "需要比较哪些指标",
+        paragraphs: [
+          "重点比较访问控制、仓库索引、本地或云端处理、审计日志、上下文窗口、diff 审查，以及工具能否遵守项目风格。",
+          "监管行业还需要查看供应商文档、管理员控制项和数据处理条款，再决定是否接入私有代码。"
+        ]
+      },
+      {
+        heading: "更安全的采用路径",
+        paragraphs: [
+          "先从只读解释和测试生成开始，再允许它在非关键仓库做小改动。等团队建立评审流程后，再扩展到敏感服务。",
+          "目标不是取消代码评审，而是让第一版更快，同时保留人对最终改动的所有权。"
+        ]
+      }
+    ],
+    faqsEn: [
+      {
+        question: "Should private repos be connected to AI coding tools?",
+        answer: "Only after checking permissions, data handling, admin controls, and the team's review process."
+      },
+      {
+        question: "Is a repository-aware tool better than chat?",
+        answer: "For real code changes, repository-aware tools are often better because they can inspect files and produce reviewable diffs."
+      }
+    ],
+    faqs: [
+      {
+        question: "私有仓库可以接入 AI 编程工具吗？",
+        answer: "可以，但要先确认权限、数据处理、管理员控制和团队评审流程。"
+      },
+      {
+        question: "仓库级工具比聊天工具更好吗？",
+        answer: "如果要真实改代码，仓库级工具通常更好，因为能读取文件并生成可审查的 diff。"
+      }
+    ]
   }
 ];
