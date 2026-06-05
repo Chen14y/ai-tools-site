@@ -666,6 +666,40 @@ h3 {
   font-size: 17px;
 }
 
+.qualityPanel {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0 20px;
+  padding: 20px;
+  border: 1px solid rgba(79, 209, 197, 0.26);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(79, 209, 197, 0.12), transparent 28%),
+    rgba(21, 25, 34, 0.82);
+}
+
+.qualityPanel p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.qualityPanel ul {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.qualityLabel {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .faqBlock {
   margin-top: 42px;
   padding-top: 10px;
@@ -705,6 +739,19 @@ h3 {
 .siteFooter {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--muted);
+}
+
+.trustPage {
+  max-width: 860px;
+}
+
+.trustSection {
+  margin-top: 34px;
+}
+
+.trustSection p {
+  color: var(--muted);
+  font-size: 17px;
 }
 
 @keyframes ambientShift {

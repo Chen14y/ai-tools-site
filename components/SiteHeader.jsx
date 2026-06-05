@@ -10,14 +10,16 @@ const navItems = {
     { href: "/articles", label: "文章" },
     { href: "/category/office", label: "办公" },
     { href: "/category/developer", label: "开发" },
-    { href: "/category/cybersecurity", label: "安全" }
+    { href: "/category/cybersecurity", label: "安全" },
+    { href: "/about", label: "关于" }
   ],
   en: [
     { href: "/en/tools", label: "Tools" },
     { href: "/en/articles", label: "Articles" },
     { href: "/en/category/office", label: "Office" },
     { href: "/en/category/developer", label: "Developer" },
-    { href: "/en/category/cybersecurity", label: "Security" }
+    { href: "/en/category/cybersecurity", label: "Security" },
+    { href: "/about", label: "About" }
   ]
 };
 

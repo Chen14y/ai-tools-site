@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
+import { ArticleQualityPanel } from "@/components/ArticleQualityPanel";
 import { FaqBlock } from "@/components/FaqBlock";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { getArticleFaqs } from "@/data/articleFaqs";
 import { articles } from "@/data/articles";
 import { categories } from "@/data/categories";
 
@@ -36,11 +38,12 @@ export default async function ArticlePage({ params }) {
   const relatedArticles = articles
     .filter((item) => item.slug !== article.slug && item.category === article.category)
     .slice(0, 2);
-  const faqSchema = article.faqs?.length
+  const faqs = getArticleFaqs(article);
+  const faqSchema = faqs.length
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: article.faqs.map((item) => ({
+        mainEntity: faqs.map((item) => ({
           "@type": "Question",
           name: item.question,
           acceptedAnswer: {
@@ -71,6 +74,8 @@ export default async function ArticlePage({ params }) {
 
         <AdSlot id={`article-${article.slug}-top`} label="文章顶部广告位" compact />
 
+        <ArticleQualityPanel article={article} category={category} />
+
         <div className="prose">
           {article.sections.map((section, index) => (
             <section key={section.heading}>
@@ -85,7 +90,7 @@ export default async function ArticlePage({ params }) {
           ))}
         </div>
 
-        <FaqBlock faqs={article.faqs} title="常见问题" />
+        <FaqBlock faqs={faqs} title="常见问题" />
 
         <AdSlot id={`article-${article.slug}-bottom`} label="文章底部广告位" compact />
 

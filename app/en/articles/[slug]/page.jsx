@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
+import { ArticleQualityPanel } from "@/components/ArticleQualityPanel";
 import { FaqBlock } from "@/components/FaqBlock";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { getArticleFaqs } from "@/data/articleFaqs";
 import { articles } from "@/data/articles";
 import { categories } from "@/data/categories";
 
@@ -37,8 +39,8 @@ export default async function EnglishArticlePage({ params }) {
     .filter((item) => item.slug !== article.slug && item.category === article.category)
     .slice(0, 2);
   const sections = article.sectionsEn ?? article.sections;
-  const faqs = article.faqsEn ?? article.faqs;
-  const faqSchema = faqs?.length
+  const faqs = getArticleFaqs(article, "en");
+  const faqSchema = faqs.length
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -72,6 +74,8 @@ export default async function EnglishArticlePage({ params }) {
         </div>
 
         <AdSlot id={`en-article-${article.slug}-top`} label="English article top ad" compact />
+
+        <ArticleQualityPanel article={article} category={category} locale="en" />
 
         <div className="prose">
           {sections.map((section, index) => (

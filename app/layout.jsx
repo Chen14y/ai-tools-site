@@ -9,10 +9,10 @@ export const metadata = {
     template: "%s | AI Tools Atlas"
   },
   description:
-    "发现好用的 AI 写作、图片、视频、办公和开发工具，阅读面向搜索需求的 AI 工具教程与评测。",
+    "面向 AI 办公、AI 开发和 AI 安全场景的工具研究、长尾教程和选择指南。",
   openGraph: {
     title: "AI Tools Atlas",
-    description: "深色简洁的 AI 工具导航与内容网站模板。",
+    description: "围绕真实工作场景整理 AI 工具、选择清单、风险提示和 FAQ。",
     type: "website"
   }
 };

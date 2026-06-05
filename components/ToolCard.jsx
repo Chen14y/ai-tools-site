@@ -21,7 +21,7 @@ export function ToolCard({ tool, locale = "zh" }) {
         ))}
       </div>
       <div className="cardActions">
-        <Link href={tool.url} target="_blank" rel="noreferrer">
+        <Link href={tool.url} target="_blank" rel="nofollow noopener noreferrer">
           {isEnglish ? "Visit site" : "访问官网"}
         </Link>
         <Link href={categoryPath}>{isEnglish ? "Same category" : "同类工具"}</Link>
